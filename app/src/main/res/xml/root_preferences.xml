@@ -1,0 +1,16 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Hidden Folder">
+
+        <SwitchPreferenceCompat
+            app:key="Hidden Folder"
+            app:title="Show Hidden Folders" />
+
+        <SwitchPreferenceCompat
+            app:dependency="Hidden Folder"
+            app:key="attachment"
+            app:title="Show Hidden Folders"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

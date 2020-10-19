@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".color_selection">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Choose Color of your Own"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:gravity="center_horizontal" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Theme"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="7dp"
+            android:layout_weight="1"
+            android:text="custom"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:id="@+id/backgroundcolorview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Background Color"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/backgroundcolor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="7dp"
+            android:background="@color/background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="7dp">
+
+        <TextView
+            android:id="@+id/textcolorview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text Color"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/textcolor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="7dp"
+            android:background="@color/text_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="7dp">
+
+        <TextView
+            android:id="@+id/primarycolorview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primary Color"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/primarycolor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="7dp"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+</LinearLayout>
